@@ -1,10 +1,11 @@
 class Value:
     """ Store a single scalar value and its gradient """
 
-    def __init__(self, data, _children=(), _op=''): 
+    def __init__(self, data, _children=(), _op='', label = ''): 
         # Public
         self.data = data
         self.grad = 0
+        self.label = label
 
         # Internal
         self._backward = lambda: None

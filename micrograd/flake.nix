@@ -18,6 +18,9 @@
           devShells.default = pkgs.mkShell {
             buildInputs = [
               pkgs.python39
+              pkgs.python39Packages.graphviz
+              pkgs.python39Packages.matplotlib
+              pkgs.python39Packages.numpy
             ];
           };
           formatter = pkgs.nixpkgs-fmt;
