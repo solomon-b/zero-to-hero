@@ -7,5 +7,5 @@ setup(name='micrograd',
       # Modules to import from other scripts:
       packages=find_packages(),
       # Executables
-      scripts=["micrograd.py"],
+      scripts=["main.py"],
      )
